@@ -2,26 +2,331 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#b91d47">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="page">
-        <h1 class="title">
-            Lorem, ipsum dolor.
-        </h1>
+    <div class="container">
+
+        <!-- background text  -->
+
+        <p class="container__bg-sweet">Sweet</p>
+        <p class="container__bg-paradise">Paradise</p>
+
+       
+        
+            <!---------header--------------->
+
+            <header class="header">
+                <div class="logo">
+                    <span class="logo__text">Sweet Paradise</span>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Отзывы</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="recycle">
+                    <picture>
+                        <source type='image/avif' srcset='./image/recycle.avif'>
+                        <source type='image/webp' srcset='./image/recycle.webp' >
+                        <img class="recycle-icon" src='./image/recycle.png' alt='Recycle'>
+                    </picture>	
+                </div>
+            </header>
+            <!-- --------main----------- -->
+        
+            <main class="main">
+
+         <!-- обертка для 1420px -->
+        <div class="wrapp">
+
+            <!------первая секция--------------->
+                <section class="section-top">
+
+                    <!-- левая сторона -->
+                    <div class="section-top__left">
+                        <h1 class="title">Sweet Paradise</h1>
+                        <h2 class="subtitle">Мы сделаем вашу<br> жизнь слаще!</h2>
+                        <div class="section-top__left-btn">
+                            <a class="btn" href="#">Выбрать десерт</a>
+                            <a class="btn" href="#">Создать свой</a>
+                        </div>
+                        <div class="section-top__left-video">
+                            <div class="section-top__left-video-text">Видео о нашей<br>кондитерской</div>
+                            <div class="section-top__left-video-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 48 48">
+                                    <path fill-rule="evenodd" d="M46 37H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h44a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zM45 9H3v26h42V9zm-24 7c.21 0 .4.08.56.2l7.77 4.87c.39.13.67.5.67.93 0 .33-.17.6-.4.78l-7.98 4.98A.98.98 0 0 1 21 28a1 1 0 0 1-1-1V17a1 1 0 0 1 1-1zm-6 23h18a1 1 0 1 1 0 2H15a1 1 0 1 1 0-2z" clip-rule="evenodd"/>
+                                  </svg>
+                            </div>
+                            <picture>
+                                <source type='image/avif' srcset='./image/Malinka-bez-hvostika.avif'>
+                                <source type='image/webp' srcset='./image/Malinka-bez-hvostika.webp' >
+                                <img class="section-top__left-bg" src='./image/Malinka-bez-hvostika.png' alt='Malinka-bez-hvostika'>
+                            </picture>
+                        </div>	
+                    </div>
+
+                    <!-- правая сторона -->
+                    <div class="section-top__card">
+                        <div class="section-top__card-price">
+                            <span class="section-top__card-price-text">30 грн</span>
+                        </div>
+                        <picture>
+                            <source type='image/avif' srcset='./image/vanila.avif'>
+                            <source type='image/webp' srcset='./image/vanila.webp' >
+                            <img class="section-top__card-image vanila" src='./image/vanila.png' alt='keks-vanila'>
+                        </picture>	
+                        <picture>
+                            <source type='image/avif' srcset='./image/karamel.avif'>
+                            <source type='image/webp' srcset='./image/karamel.webp' >
+                            <img class="section-top__card-image karamel" src='./image/karamel.png' alt='keks-vanila'>
+                        </picture>	
+                        <picture>
+                            <source type='image/avif' srcset='./image/chocolate.avif'>
+                            <source type='image/webp' srcset='./image/chocolate.webp' >
+                            <img class="chocolate" src='./image/chocolate.png' alt='keks-vanila'>
+                        </picture>	
+                        <div class="section-top__card-description">
+                            <picture>
+                                <source type='image/avif' srcset='./image/list-myata.avif'>
+                                <source type='image/webp' srcset='./image/list-myata.webp' >
+                                <img class="section-top__card-description-icon" src='./image/list-myata.png' alt='list-myata'>
+                            </picture>	 
+                            <p class="section-top__card-description-text">Ванильный</p>
+                            <div class="section-top__card-btn">
+                                <div class="wrapp-btn-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 96 96">
+                                        <switch>
+                                          <g>
+                                            <path class="left-arrow" d="M84 44H21.66l21.17-21.17a4 4 0 0 0-5.66-5.66l-28 28a4 4 0 0 0 0 5.66l28 28a3.99 3.99 0 0 0 5.66 0 4 4 0 0 0 0-5.66L21.66 52H84a4 4 0 0 0 0-8z"/>
+                                          </g>
+                                        </switch>
+                                      </svg>
+                                </div>
+                                <div class="wrapp-btn-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 96 96">
+                                        <switch>
+                                          <g>
+                                            <path class="right-arrow" d="M84 44H21.66l21.17-21.17a4 4 0 0 0-5.66-5.66l-28 28a4 4 0 0 0 0 5.66l28 28a3.99 3.99 0 0 0 5.66 0 4 4 0 0 0 0-5.66L21.66 52H84a4 4 0 0 0 0-8z"/>
+                                          </g>
+                                        </switch>
+                                      </svg>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- вторая секция -->
+                <section class="tasty">
+                    <picture>
+                        <source type='image/avif' srcset='./image/tasty-bg.avif'>
+                        <source type='image/webp' srcset='./image/tasty-bg.webp' >
+                        <img class="tasty__bg tasty__bg-one" src='./image/tasty-bg.png' alt='bacground'>
+                    </picture>	
+                    <picture>
+                        <source type='image/avif' srcset='./image/tasty-bg.avif'>
+                        <source type='image/webp' srcset='./image/tasty-bg.webp' >
+                        <img class="tasty__bg tasty__bg-two" src='./image/tasty-bg.png' alt='bacground'>
+                    </picture>	
+                    <picture>
+                        <source type='image/avif' srcset='./image/tasty-bg.avif'>
+                        <source type='image/webp' srcset='./image/tasty-bg.webp' >
+                        <img class="tasty__bg one tasty__bg-three" src='./image/tasty-bg.png' alt='bacground'>
+                    </picture>	
+                    <h2 class="tasty__subtitle">Почему у нас вкусно?</h2>
+                    <div class="tasty__wrapp">
+                        <ul class="tasty__items-left">
+                            <li class="tasty__item">
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-bottle.avif'>
+                                    <source type='image/webp' srcset='./image/tasty-bottle.webp' >
+                                    <img src='./image/tasty-bottle.png' alt='picture'>
+                                </picture>	
+                                Качественные<br>продукты
+                            </li>
+                            <li class="tasty__item book">
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-book.avif'>
+                                    <source type='image/webp' srcset='./image/tasty-book.webp' >
+                                    <img src='./image/tasty-book.png' alt='picture'>
+                                </picture>	
+                                Уникальные<br>рецепты
+                            </li>
+                            <li class="tasty__item">
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-kok.avif'>
+                                    <source type='image/webp' srcset='./image/tasty-kok.webp' >
+                                    <img src='./image/tasty-kok.png' alt='picture'>
+                                </picture>	
+                                Лучшие<br>кондитеры
+                            </li>
+                        </ul>
+                        <div class="tasty__image-center-border">
+                            <picture>
+                                <source type='image/avif' srcset='./image/tasty-center.avif'>
+                                <source type='image/webp' srcset='./image/tasty-center.webp' >
+                                <img class="tasty__image-center" src='./image/tasty-center.png' alt='picture'>
+                            </picture>
+                            <div class="tasty__image-center-border-round"></div>
+                        </div>
+                        <ul class="tasty-items-right">
+                            <li class="tasty__item">
+                                Дорогое<br>оборудование
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-pech.avif'>
+                                    <source type='image/webp' srcset='./image/.webp' >
+                                    <img src='./image/tasty-pech.png' alt='picture'>
+                                </picture>	
+                            </li>
+                            <li class="tasty__item money">
+                                Доступные<br>цены
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-money.avif'>
+                                    <source type='image/webp' srcset='./image/tasty-money.webp' >
+                                    <img src='./image/tasty-money.png' alt='picture'>
+                                </picture>	
+                            </li>
+                            <li class="tasty__item">
+                                Программа<br>лояльности
+                                <picture class="tasty__item-image">
+                                    <source type='image/avif' srcset='./image/tasty-loyal.avif'>
+                                    <source type='image/webp' srcset='./image/tasty-loyal.webp' >
+                                    <img src='./image/tasty-loyal.png' alt='picture'>
+                                </picture>	
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </div>   
+            <!-- третья секция -->
+            <section class="our-news">
+                <picture>
+                    <source type='image/avif' srcset='./image/Malinka-bez-hvostika.avif'>
+                    <source type='image/webp' srcset='./image/Malinka-bez-hvostika.webp' >
+                    <img class="our-news__bg-image" src='./image/Malinka-bez-hvostika.png' alt='Malinka-bez-hvostika'>
+                </picture>	
+                <h2 class="our-news__title">Попробуйте наши новинки</h2>
+                <div class="cards">
+                    <div class="cards__item">
+                        <picture>
+                            <source type='image/avif' srcset='./image/pana-cota.avif'>
+                            <source type='image/webp' srcset='./image/pana-cota.webp' >
+                            <img class="cards__item-image" src='./image/pana-cota.png' alt='pana-cota'>
+                        </picture>	
+                        <h3 class="cards__item-title">Пана Котта</h3>
+                        <p class="cards__item-description">
+                            Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
+                        </p>
+                        <div class="card__item-price">
+                            70 грн / 200 г
+                        </div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="cards__item tiramisu">
+                        <picture>
+                            <source type='image/avif' srcset='./image/tiramisu.avif'>
+                            <source type='image/webp' srcset='./image/tiramisu.webp' >
+                            <img class="cards__item-image" src='./image/tiramisu.png' alt='pana-cota'>
+                        </picture>	
+                        <h3 class="cards__item-title">Тирамису</h3>
+                        <p class="cards__item-description">
+                            Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
+                        </p>
+                        <div class="card__item-price">
+                            80 грн / 200 г
+                        </div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="cards__item">
+                        <picture>
+                            <source type='image/avif' srcset='./image/apple-tartar.avif'>
+                            <source type='image/webp' srcset='./image/apple-tartar.webp' >
+                            <img class="cards__item-image" src='./image/apple-tartar.png' alt='pana-cota'>
+                        </picture>	
+                        <h3 class="cards__item-title">Яблочный тартар</h3>
+                        <p class="cards__item-description">
+                            Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
+                        </p>
+                        <div class="card__item-price">
+                            80 грн / 200 г
+                        </div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- обертка для 1420px -->
+        <div class="wrapp">
+
+            <!-- четвертая секция как мы работаем? -->
+            <sectioon class="our-work">
+                <picture>
+                    <source type='image/avif' srcset='./image/Malinka-bez-hvostika.avif'>
+                    <source type='image/webp' srcset='./image/Malinka-bez-hvostika.webp' >
+                    <img class="our-work__bg-image" src='./image/Malinka-bez-hvostika.png' alt='Malinka-bez-hvostika'>
+                </picture>	
+                <h2 class="our-work__title">как мы работаем?</h2>
+                <div class="work-cards">
+                    <ul class="work-card-item">
+                        <li class="work-card__item-title">01</li>
+                        <li class="work-card__item-subtitle">Получаем заказ</li>
+                        <li class="work-card__item-descript">Получаем заказ и связываемся с Вами для
+                            уточнения деталей</li>
+                    </ul>
+                    <ul class="work-card-item">
+                        <li class="work-card__item-title">02</li>
+                        <li class="work-card__item-subtitle">Готовим заказ</li>
+                        <li class="work-card__item-descript">Готовим заказ в строгом соответствии с пожеланиями клиента</li>
+                    </ul>
+                    <ul class="work-card-item">
+                        <li class="work-card__item-title">03</li>
+                        <li class="work-card__item-subtitle">Отправляем товар</li>
+                        <li class="work-card__item-descript">Отправляем Ваш заказ ранее утвержденным Вами способом</li>
+                    </ul>
+                    <ul class="work-card-item">
+                        <li class="work-card__item-title">04</li>
+                        <li class="work-card__item-subtitle">Доставка и оплата</li>
+                        <li class="work-card__item-descript">Наш курьер доставит товар по Вашему адресу прямо в руки</li>
+                    </ul>
+                </div>
+            </sectioon>
+        </div>
+
+            </main>
+            <footer class="footer">
+                <div class="footer__wrapp">
+                    <div class="logo footer__logo">
+                        <span class="logo__text">Sweet Paradise</span>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="navigation__list ">
+                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">О нас</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Каталог</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Отзывы</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="phone">+38 (050) 402 40 30</div>
+                </div>
+                <div class="copyright">Все права сохранены/2021-2022</div>
+            </footer>
+        
     </div>
-</div>
+    
 </body>
 </html>
