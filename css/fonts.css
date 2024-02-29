@@ -1,0 +1,90 @@
+@font-face {
+    font-family:"Sail-Regular";
+    src: url("../fonts/Sail-Regular.woff2") format("woff2");
+    src: url("../fonts/Sail-Regular.woff") format("woff");
+    src: url("../fonts/Sail-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Light.woff") format("woff");
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Regular.woff") format("woff");
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-Medium";
+    src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Medium.woff") format("woff");
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Bold.woff") format("woff");
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family:"Montserrat-Black";
+    src: url("../fonts/Montserrat-Black.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Black.woff") format("woff");
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family:"OpenSans-Light";
+    src: url("../fonts/OpenSans-Light.woff2") format("woff2");
+    src: url("../fonts/OpenSans-Light.woff") format("woff");
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family:"OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.woff") format("woff2");
+    src: url("../fonts/OpenSans-Regular.woff") format("woff");
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family:"OpenSans-ExtraBold";
+    src: url("../fonts/OpenSans-ExtraBold.woff") format("woff2");
+    src: url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+    src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
