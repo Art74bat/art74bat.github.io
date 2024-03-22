@@ -14,13 +14,13 @@
     background-repeat: no-repeat;
     background-position: 810px -80px;
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .container__bg-sweet {
     position: absolute;
 
-    top: 27px;
-    left: -243px;
+    top: 42px;
+    left: -227px;
 
     color: rgb(156, 7, 70);
     font-family: "Sail-Regular",sans-serif;
@@ -48,8 +48,11 @@
 .wrapp{
     max-width: 1420px;
     margin: 0 auto; 
-    border:1px solid red;
+    /* border:1px solid red; */
 }
+
+
+
 
 
 
@@ -76,16 +79,19 @@
 }
 
 .navigation{
-    width: 407px;
+    max-width: 407px;
 }
 .navigation__list{
     display: flex;
+    flex-wrap: wrap;
+    gap:20px;
     justify-content: space-between;
     align-items: center;
 }
-.navigation__link{
+.navigation__item{
     position: relative;
-
+}
+.navigation__link{
     color: rgb(68, 66, 81);
     font-family: "Montserrat-Regular",sans-serif;
     font-size: 20px;
@@ -94,30 +100,33 @@
 
     text-align: left;
 }
-.navigation__link::before{
+.navigation__item::after{
     content: "";
     display: block;
+    width: 100%;
+    height: 3px;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    left: -15px;
-    bottom: 25%;
-    display: block;
+    top: 25px;
+    left: 0;
 
-    background-color:rgb(156, 7, 70);
+    background-color:rgb(197, 83, 131);
     border-radius: 3px;
     opacity: 0;
-    transition: .2s;
+    transition: 0.7s ease ;
 }
-
-.navigation__link:hover::before{
+.navigation__item:hover::after{
     opacity: 1;
+    
 }
 .navigation__link:active{
     color:red;
 }
-.navigation__link:active::before{
-    transform: translate(-50%,50%);
+
+.navigation__link:focus{
+    outline: none;
+    padding: 4px;
+    box-shadow: 0 0 6px grey;
+    border-radius: 4px;
 }
 .recycle{
     position: relative;
@@ -167,6 +176,12 @@
     display: flex;
     gap:304px
 }
+
+
+
+
+
+
 
 
 /* ==========левая сторона===================== */
@@ -229,6 +244,12 @@
     transform: translate(2px, -4px);
 }
 
+.btn:focus{
+    outline: none;
+    padding: 4px;   
+    box-shadow: 4px 4px 1px rgb(190, 29, 29);
+    border-radius: 50px;
+}
 
 .section-top__left-video {
     position: relative;
@@ -279,6 +300,10 @@
 .section-top__left-video-icon:active{
     transform: scale(1.2);
 }
+
+
+
+
 
 
 
@@ -431,6 +456,12 @@
     transform: translate(4px,0px);
 }
 
+
+
+
+
+
+
 /* ========вторая секция почему у нас?====================== */
 
 .tasty {
@@ -489,13 +520,12 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 125%;
-    letter-spacing: 0%;
 }
 .book{
     margin-right: 192px;
 }
 
-.tasty__item-image {
+.tasty__item-pic {
     display: flex;
     justify-content: center;
 
@@ -578,6 +608,12 @@
     margin-left: 202px;
 }
 
+
+
+
+
+
+
 /* ==========секция три  наши новинки=================== */
 
 .our-news {
@@ -632,6 +668,9 @@
     font-weight: 600;
     line-height: 32px;
 }
+
+
+
 .tiramisu {
     /* что бы выровнять кнопки на карточках */
     margin-top: -40px;
@@ -657,18 +696,20 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    text-align: center;
 }
 .btn {
     width: 200px;
     height: 60px;
 }
 
+
+
+
+
 /*================ секция четыре как мы работаем============= */
 
 .our-work {
     position: relative;
-    margin-bottom: 190px;
 }
 .our-work__bg-image{
     width: 96px;
@@ -689,7 +730,9 @@
 }
 .work-cards {
     display: flex;
+    /* width: 294px; */
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     gap:82px;
 }
 .work-card-item {
@@ -701,7 +744,7 @@
     border: 1px solid rgb(255, 213, 221);
     border-radius: 5px;
 }
-.work-card__item-title {
+.work-card-item__title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -720,7 +763,7 @@
     background: rgb(255, 213, 221);
     border-radius: 50%;
 }
-.work-card__item-subtitle {
+.work-cards-item__subtitle {
     margin-bottom: 26px;
 
     color: rgb(180, 78, 121);
@@ -729,7 +772,7 @@
     font-weight: 900;
     line-height: 27px;
 }
-.work-card__item-descript {
+.work-cards-item__descript {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
@@ -740,9 +783,439 @@
     line-height: 25px;
 }
 
+/* ----------секция наш каталог---------- */
+
+.our-catalog {
+    position: relative;
+    max-width: 1529px;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 180px;
+    /* border: 1px solid red; */
+}
+.our-catalog__bg-image-mixed{
+    position: absolute;
+    top: 30px;
+    left: -370px;
+}
+.our-catalog__bg-image-coffe{
+    position: absolute;
+    top: -50px;
+    right: -455px;
+}
+.our-catalog__bg-image-myata{
+    position: absolute;
+    left: -270px;
+    bottom: -210px;
+}
+.our-catalog__title {
+    margin-bottom: 70px;
+
+    color: rgb(68, 66, 81);
+    font-family:"Montserrat-Black",sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.our-catalog__carusel {
+    margin-bottom: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+.our-catalog__carusel-card {
+    display: grid;
+    grid-template-rows: 160px auto;
+    justify-items: center; 
+    gap: 20px;
+
+    /* border:1px solid red;  */
+    transition: .3s;
+}
+.our-catalog__carusel-pic{
+    position: relative;
+    display: block;
+    width: 200px;
+
+    /* border:1px solid red;  */
+}
+
+.our-catalog__carusel-pic::after{
+    content: '';
+    display: block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 48px;
+    left: 35px;
+
+    box-shadow: 0px 20px 90px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(253, 229, 234);
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s;
+    /* background-color: #ca1919; */
+}
+
+.our-catalog__carusel-card-image {
+    width: 100%;
+    object-fit: cover;
+}
+.our-catalog__carusel-card-title {
+    color: rgb(180, 78, 121);
+    font-family: "Montserrat-Bold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    
+}
+.our-catalog__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,370px));
+    /* grid-template-rows: repeat(3,1fr); */
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 90px;
+    column-gap:151px;   
+}
+.our-catalog__item {
+    margin-bottom: 41px;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    /* border:1px solid red; */
+}
+.our-catalog__item-pic{
+    width: 300px;
+    display: block;
+}
+.our-catalog__item-image {
+    width: 100%;
+}
+.our-catalog__item-title {
+    margin-bottom: 19px;
+    color: rgb(156, 7, 70);
+    font-family: "Montserrat-SemiBold",sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.our-catalog__item-descript {
+    margin-bottom: 19px;
+    color: rgb(68, 66, 81);
+    font-family: "OpenSans-Regular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+}
+.our-catalog__item-price {
+    margin-bottom: 29px;
+    color: rgb(156, 7, 70);
+    font-family: "Montserrat-SemiBold",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.our-catalog__button {
+    margin: 0 auto;
+}
+.our-catalog__carusel-card:hover{
+    transform: scale(1.2);
+}
+.our-catalog__carusel-pic:hover::after{
+    opacity: 1;
+}
 
 
 
+/* отзывы наших сладкоежек */
+.our-reviews{
+    position: relative;
+    margin-bottom: 180px;
+    /* border:1px solid red; */
+}
+.our-reviews-bg-pic{
+    position: absolute;
+    z-index: -1;
+
+}
+
+/* картинки на фоне */
+.pic-left{
+    top: 6263px;
+    left: -277px;
+}
+.pic-right{
+    top: 6300px;
+    right: -448px;
+}
+
+/* заголовок секции */
+.our-reviews-title {
+    text-align: center;
+    margin-bottom: 90px;
+    color: rgb(68, 66, 81);
+    font-family: "Montserrat-Black",sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 61px;
+}
+
+.our-reviews-wrapp {
+    display: grid;
+
+    /* 1 вариант  картинки помещаются в 1420px и переносятся но страдает gap... */
+    grid-template-columns:repeat(auto-fit,minmax(440px,1fr));
+
+    /* 2 вариант картинки помещаются в 1420px  но не переносятся ..иcпользовать media*/
+    /* grid-template-columns:repeat(auto-fit,460px 440px 440px); */
+
+    /* вартант 3 нужен wrapp 1462px */
+    /* grid-template-columns:repeat(auto-fit,minmax(440px,460px)); */
+
+    /* 4 вариант помещаются в 1420px (картинки сделать 440px) и переносятся но..опять же gap*/
+    /* grid-template-columns:repeat(auto-fit,440px);
+    grid-template-rows: repeat(9,minmax(102px,111px)); */
+
+    gap: 40px;
+
+    /* для варианта 4 */
+    /* column-gap: 40px; */
+    
+    /* порядок не особо важен */
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+
+}
+.pic-wrapp{
+    position: relative;
+}
+.pic-wrapp{
+    /* width: 440px; */
+    grid-row: span 3;
+}
+/* большая картинка  */
+.big{
+    grid-row: span 6;
+}
+
+/* картинка с кнопкой */
+.half-big{
+    grid-row: span 5;
+}
+.pic-wrapp-smoll{
+    grid-row: span 1;
+}
+
+.our-reviews-video{
+    width: 100%;
+    object-fit: cover;
+
+    /* всем картинкам тень */
+    box-shadow: 0px 14px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* иконка видеоплеера */
+.video-icon-pic{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    top: 35%;
+    left: 40%;
+}
+.video-icon{
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+.video-icon:hover{
+    cursor: pointer;
+}
+
+/* кнопка больше видеоотзывов */
+.our-reviews-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 100px;
+    color: rgb(156, 7, 70);
+    font-family: "OpenSans",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+
+    border:2px solid  rgb(156, 7, 70);
+    border-radius: 10px;
+}
+
+/*===============секция мы в   инстаграмме============== */
+
+
+.our-instagramm {
+    margin-bottom: 180px;
+}
+/* ===заголовок ===*/
+.our-instagramm__title {
+    margin-bottom: 80px;
+
+    color: rgb(68, 66, 81);
+    font-family: "Montserrat-Black",sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 61px;
+    text-align: center;
+}
+
+/* блок с картинками */
+.picture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,460px);
+    gap: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+    margin-bottom: 80px;
+}
+/* тени на картинке */
+.our-instagramm-image {
+    border-radius: 10px;
+    box-shadow: 0px 14px 40px 0px rgba(0, 0, 0, 0.3);
+}
+/* кнопка по центру */
+.instagramm-btn {
+    margin: 0 auto;
+}
+
+
+
+/* секция сделать заказ */
+.time-order {
+    /* border: 1px solid red; */
+    background: url('../image/order-bg-left.png'),url('../image/order-bg-right.png');
+    background-repeat: no-repeat;
+    background-position: 50px 380px, 815px 310px;
+}
+.time-order__title {
+    margin-bottom: 90px;
+
+    color: rgb(68, 66, 81);
+    font-family: "Montserrat-Black",sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 61px;
+    text-align: center;
+}
+.time-order__title::after{
+    content:" :)"
+}
+
+.time-order__bg {
+    position: relative;
+    max-width: 940px;
+    /* min-height: 604px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    background: url('../image/SweetParadise-bg.png');
+    background-repeat: no-repeat;
+    background-position: 70px 73px;
+    background-color: rgb(255, 213, 221);
+    /* border:1px solid red; */
+}
+
+.form{
+    width: 500px;
+    height: 100%;
+    padding-top: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    /* border:1px solid red; */
+    z-index: 2;
+}
+
+.form__title {
+    margin-bottom: 18px;
+    color: rgb(156, 7, 70);
+    font-family: "Montserrat-Bold",sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+}
+.form__descript {
+    margin-bottom: 45px;
+    color: rgb(68, 66, 81);
+    font-family: "OpenSans-Regular",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125.6%;
+    text-align: center;
+}
+.form__input{
+    width: 343px;
+    height: 60px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    border: 1px solid rgb(156, 7, 70);
+    border-radius: 40px;
+}
+.form__input:focus{
+    outline: none;
+    box-shadow: 4px 4px 1px rgb(190, 29, 29);
+    border-radius: 50px;
+}
+.form__input::placeholder{
+    color: rgb(68, 66, 81);
+    font-family: "OpenSans-Light",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 125.6%;
+}
+.form__btn{
+    appearance: none;
+    width: 343px;
+    border: 0;
+    border-radius: 50px;   
+    margin-bottom: 42px;
+}
+.disclaimer {
+    margin-bottom: 82px;
+
+    color: rgb(68, 66, 81);
+    font-family: "OpenSans-Regular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125.6%;
+    text-align: center;
+}
+
+.time-order__bg-pic {
+    position: absolute;
+    right: -30px;
+    bottom: 60px;
+    /* border:1px solid red; */
+}
+.time-order__bg-image{
+    width: 100%;
+}
 
 
 
@@ -758,14 +1231,20 @@
     gap: 73px;
     background:rgb(156, 7, 70);
 }
+/* обертка */
 .footer__wrapp {
     max-width: 1420px;
+
+    /* элементы на всю ширину */
+    width: 100%;
     margin: 0 auto;
     margin-top: 110px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 320px;
+    /* что бы при переносе не слипались */
+    gap: 20px;
     /* border:1px solid blue; */
 }
 .footer__logo{
@@ -773,6 +1252,13 @@
 }
 .footer-navigation {
     color: white;
+}
+
+.footer-navigation:focus{
+    outline: none;
+    padding: 4px;
+    box-shadow: 0 0 6px rgb(253, 249, 249);
+    border-radius: 4px;
 }
 .phone {
     color: rgb(255, 255, 255);
@@ -792,3 +1278,4 @@
     line-height: 19px;
 
 }
+
