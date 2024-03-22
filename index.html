@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +18,11 @@
 <body>
     <div class="container">
 
-        <!-- background text  -->
-
+        <!-- background text -->
         <p class="container__bg-sweet">Sweet</p>
         <p class="container__bg-paradise">Paradise</p>
-
-       
-        
-            <!---------header--------------->
-
-            <header class="header">
+           <!-- header -->
+        <header class="header">
                 <div class="logo">
                     <span class="logo__text">Sweet Paradise</span>
                 </div>
@@ -46,16 +41,28 @@
                         <img class="recycle-icon" src='./image/recycle.png' alt='Recycle'>
                     </picture>	
                 </div>
-            </header>
-            <!-- --------main----------- -->
-        
-            <main class="main">
+        </header>
+            <!-- main -->       
+        <main class="main">
+                                    <!-- картинки фона -->
+        <picture class="our-reviews-bg-pic pic-left">
+            <source type='image/avif' srcset='./image/kofe-2.avif'>
+            <source type='image/webp' srcset='./image/kofe-2.webp' >
+            <img class="our-reviews-bg-image" src='./image/kofe-2.png' alt='кофе-порошок'>
+        </picture>	
+        <picture class="our-reviews-bg-pic pic-right">
+            <source type='image/avif' srcset='./image/kofe-2.avif'>
+            <source type='image/webp' srcset='./image/kofe-2.webp' >
+            <img class="our-reviews-bg-image" src='./image/kofe-2.png' alt='кофе-порошок'>
+        </picture>	
 
          <!-- обертка для 1420px -->
         <div class="wrapp">
 
-            <!------первая секция--------------->
-                <section class="section-top">
+            <!-- первая секция -->
+            <section class="section-top wrapp">
+
+
 
                     <!-- левая сторона -->
                     <div class="section-top__left">
@@ -68,11 +75,13 @@
                         <div class="section-top__left-video">
                             <div class="section-top__left-video-text">Видео о нашей<br>кондитерской</div>
                             <div class="section-top__left-video-icon">
+
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 48 48">
                                     <path fill-rule="evenodd" d="M46 37H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h44a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1zM45 9H3v26h42V9zm-24 7c.21 0 .4.08.56.2l7.77 4.87c.39.13.67.5.67.93 0 .33-.17.6-.4.78l-7.98 4.98A.98.98 0 0 1 21 28a1 1 0 0 1-1-1V17a1 1 0 0 1 1-1zm-6 23h18a1 1 0 1 1 0 2H15a1 1 0 1 1 0-2z" clip-rule="evenodd"/>
                                   </svg>
                             </div>
-                            <picture>
+
+                            <picture class="section-top__left-pic">
                                 <source type='image/avif' srcset='./image/Malinka-bez-hvostika.avif'>
                                 <source type='image/webp' srcset='./image/Malinka-bez-hvostika.webp' >
                                 <img class="section-top__left-bg" src='./image/Malinka-bez-hvostika.png' alt='Malinka-bez-hvostika'>
@@ -80,28 +89,33 @@
                         </div>	
                     </div>
 
+
+
+
+
+
                     <!-- правая сторона -->
                     <div class="section-top__card">
                         <div class="section-top__card-price">
                             <span class="section-top__card-price-text">30 грн</span>
                         </div>
-                        <picture>
+                        <picture class="section-top__card-pic">
                             <source type='image/avif' srcset='./image/vanila.avif'>
                             <source type='image/webp' srcset='./image/vanila.webp' >
                             <img class="section-top__card-image vanila" src='./image/vanila.png' alt='keks-vanila'>
                         </picture>	
-                        <picture>
+                        <picture class="section-top__card-pic">
                             <source type='image/avif' srcset='./image/karamel.avif'>
                             <source type='image/webp' srcset='./image/karamel.webp' >
                             <img class="section-top__card-image karamel" src='./image/karamel.png' alt='keks-vanila'>
                         </picture>	
-                        <picture>
+                        <picture class="section-top__card-pic">
                             <source type='image/avif' srcset='./image/chocolate.avif'>
                             <source type='image/webp' srcset='./image/chocolate.webp' >
                             <img class="chocolate" src='./image/chocolate.png' alt='keks-vanila'>
                         </picture>	
                         <div class="section-top__card-description">
-                            <picture>
+                            <picture class="section-top__card-pic">
                                 <source type='image/avif' srcset='./image/list-myata.avif'>
                                 <source type='image/webp' srcset='./image/list-myata.webp' >
                                 <img class="section-top__card-description-icon" src='./image/list-myata.png' alt='list-myata'>
@@ -129,21 +143,21 @@
                             </div>
                         </div>
                     </div>
-                </section>
+            </section>
 
             <!-- вторая секция -->
-                <section class="tasty">
-                    <picture>
+            <section class="tasty wrapp">
+                    <picture class="tasty-pic">
                         <source type='image/avif' srcset='./image/tasty-bg.avif'>
                         <source type='image/webp' srcset='./image/tasty-bg.webp' >
                         <img class="tasty__bg tasty__bg-one" src='./image/tasty-bg.png' alt='bacground'>
                     </picture>	
-                    <picture>
+                    <picture class="tasty-pic">
                         <source type='image/avif' srcset='./image/tasty-bg.avif'>
                         <source type='image/webp' srcset='./image/tasty-bg.webp' >
                         <img class="tasty__bg tasty__bg-two" src='./image/tasty-bg.png' alt='bacground'>
                     </picture>	
-                    <picture>
+                    <picture class="tasty-pic">
                         <source type='image/avif' srcset='./image/tasty-bg.avif'>
                         <source type='image/webp' srcset='./image/tasty-bg.webp' >
                         <img class="tasty__bg one tasty__bg-three" src='./image/tasty-bg.png' alt='bacground'>
@@ -152,7 +166,7 @@
                     <div class="tasty__wrapp">
                         <ul class="tasty__items-left">
                             <li class="tasty__item">
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-bottle.avif'>
                                     <source type='image/webp' srcset='./image/tasty-bottle.webp' >
                                     <img src='./image/tasty-bottle.png' alt='picture'>
@@ -160,7 +174,7 @@
                                 Качественные<br>продукты
                             </li>
                             <li class="tasty__item book">
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-book.avif'>
                                     <source type='image/webp' srcset='./image/tasty-book.webp' >
                                     <img src='./image/tasty-book.png' alt='picture'>
@@ -168,7 +182,7 @@
                                 Уникальные<br>рецепты
                             </li>
                             <li class="tasty__item">
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-kok.avif'>
                                     <source type='image/webp' srcset='./image/tasty-kok.webp' >
                                     <img src='./image/tasty-kok.png' alt='picture'>
@@ -176,18 +190,21 @@
                                 Лучшие<br>кондитеры
                             </li>
                         </ul>
+                        <!-- Для круглой границы -->
                         <div class="tasty__image-center-border">
-                            <picture>
+                            <!-- картинка по центру -->
+                            <picture class="tasty__image-center-pic">
                                 <source type='image/avif' srcset='./image/tasty-center.avif'>
                                 <source type='image/webp' srcset='./image/tasty-center.webp' >
                                 <img class="tasty__image-center" src='./image/tasty-center.png' alt='picture'>
                             </picture>
+                            <!-- для еще одний пары кружочков -->
                             <div class="tasty__image-center-border-round"></div>
                         </div>
                         <ul class="tasty-items-right">
                             <li class="tasty__item">
                                 Дорогое<br>оборудование
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-pech.avif'>
                                     <source type='image/webp' srcset='./image/.webp' >
                                     <img src='./image/tasty-pech.png' alt='picture'>
@@ -195,7 +212,7 @@
                             </li>
                             <li class="tasty__item money">
                                 Доступные<br>цены
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-money.avif'>
                                     <source type='image/webp' srcset='./image/tasty-money.webp' >
                                     <img src='./image/tasty-money.png' alt='picture'>
@@ -203,7 +220,7 @@
                             </li>
                             <li class="tasty__item">
                                 Программа<br>лояльности
-                                <picture class="tasty__item-image">
+                                <picture class="tasty__item-pic">
                                     <source type='image/avif' srcset='./image/tasty-loyal.avif'>
                                     <source type='image/webp' srcset='./image/tasty-loyal.webp' >
                                     <img src='./image/tasty-loyal.png' alt='picture'>
@@ -211,8 +228,9 @@
                             </li>
                         </ul>
                     </div>
-                </section>
-        </div>   
+            </section>
+        </div>  
+
             <!-- третья секция -->
             <section class="our-news">
                 <picture>
@@ -232,7 +250,7 @@
                         <p class="cards__item-description">
                             Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
                         </p>
-                        <div class="card__item-price">
+                        <div class="cards__item-price">
                             70 грн / 200 г
                         </div>
                         <a href="#" class="btn">В корзину</a>
@@ -247,7 +265,7 @@
                         <p class="cards__item-description">
                             Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
                         </p>
-                        <div class="card__item-price">
+                        <div class="cards__item-price">
                             80 грн / 200 г
                         </div>
                         <a href="#" class="btn">В корзину</a>
@@ -262,7 +280,7 @@
                         <p class="cards__item-description">
                             Свежие яйца, желток, сахар, маскапоне,готовое печенье "Савоярди",эспрессо, коньяк, какао, соль
                         </p>
-                        <div class="card__item-price">
+                        <div class="cards__item-price">
                             80 грн / 200 г
                         </div>
                         <a href="#" class="btn">В корзину</a>
@@ -272,9 +290,8 @@
 
             <!-- обертка для 1420px -->
         <div class="wrapp">
-
             <!-- четвертая секция как мы работаем? -->
-            <sectioon class="our-work">
+            <section class="our-work wrapp">
                 <picture>
                     <source type='image/avif' srcset='./image/Malinka-bez-hvostika.avif'>
                     <source type='image/webp' srcset='./image/Malinka-bez-hvostika.webp' >
@@ -283,49 +300,353 @@
                 <h2 class="our-work__title">как мы работаем?</h2>
                 <div class="work-cards">
                     <ul class="work-card-item">
-                        <li class="work-card__item-title">01</li>
-                        <li class="work-card__item-subtitle">Получаем заказ</li>
-                        <li class="work-card__item-descript">Получаем заказ и связываемся с Вами для
+                        <li class="work-card-item__title">01</li>
+                        <li class="work-card-item__subtitle">Получаем заказ</li>
+                        <li class="work-card-item__descript">Получаем заказ и связываемся с Вами для
                             уточнения деталей</li>
                     </ul>
                     <ul class="work-card-item">
-                        <li class="work-card__item-title">02</li>
-                        <li class="work-card__item-subtitle">Готовим заказ</li>
-                        <li class="work-card__item-descript">Готовим заказ в строгом соответствии с пожеланиями клиента</li>
+                        <li class="work-card-item__title">02</li>
+                        <li class="work-card-item__subtitle">Готовим заказ</li>
+                        <li class="work-card-item__descript">Готовим заказ в строгом соответствии с пожеланиями клиента</li>
                     </ul>
                     <ul class="work-card-item">
-                        <li class="work-card__item-title">03</li>
-                        <li class="work-card__item-subtitle">Отправляем товар</li>
-                        <li class="work-card__item-descript">Отправляем Ваш заказ ранее утвержденным Вами способом</li>
+                        <li class="work-card-item__title">03</li>
+                        <li class="work-card-item__subtitle">Отправляем товар</li>
+                        <li class="work-card-item__descript">Отправляем Ваш заказ ранее утвержденным Вами способом</li>
                     </ul>
                     <ul class="work-card-item">
-                        <li class="work-card__item-title">04</li>
-                        <li class="work-card__item-subtitle">Доставка и оплата</li>
-                        <li class="work-card__item-descript">Наш курьер доставит товар по Вашему адресу прямо в руки</li>
+                        <li class="work-card-item__title">04</li>
+                        <li class="work-card-item__subtitle">Доставка и оплата</li>
+                        <li class="work-card-item__descript">Наш курьер доставит товар по Вашему адресу прямо в руки</li>
                     </ul>
                 </div>
-            </sectioon>
+            </section>
         </div>
 
-            </main>
-            <footer class="footer">
-                <div class="footer__wrapp">
-                    <div class="logo footer__logo">
-                        <span class="logo__text">Sweet Paradise</span>
+            <!-- секция вкусняшки -->
+        <section class="our-catalog">
+                <picture class="our-catalog__bg-image">
+                    <source type='image/avif' srcset='./image/mixed.avif'>
+                    <source type='image/webp' srcset='./image/mixed.webp' >
+                    <img class="our-catalog__bg-image-mixed" src='./image/mixed.png' alt=''>
+                </picture>	
+                <picture class="our-catalog__bg-image">
+                    <source type='image/avif' srcset='./image/coffe.avif'>
+                    <source type='image/webp' srcset='./image/coffe.webp' >
+                    <img class="our-catalog__bg-image-coffe" src='./image/coffe.png' alt=''>
+                </picture>	
+                <picture class="our-catalog__bg-image">
+                    <source type='image/avif' srcset='./image/myata.avif'>
+                    <source type='image/webp' srcset='./image/myata.webp' >
+                    <img class="our-catalog__bg-image-myata" src='./image/myata.png' alt=''>
+                </picture>	
+                <h2 class="our-catalog__title">Каталог вкусняшек</h2>
+                <div class="our-catalog__carusel">
+                    <div class="our-catalog__carusel-card">
+                        <picture class="our-catalog__carusel-pic">
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/webp' srcset='./image/maffin.webp' >
+                            <img class="our-catalog__carusel-card-image" src='./image/maffin.png' alt='ekler'>
+                        </picture>	
+                        <h3 class="our-catalog__carusel-card-title">Эклер</h3>
                     </div>
-                    <nav class="navigation">
-                        <ul class="navigation__list ">
-                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">О нас</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Каталог</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Отзывы</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="phone">+38 (050) 402 40 30</div>
+                    <div class="our-catalog__carusel-card">
+                        <picture class="our-catalog__carusel-pic">
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/webp' srcset='./image/maffin.webp' >
+                            <img class="our-catalog__carusel-card-image" src='./image/maffin.png' alt='makarun'>
+                        </picture>	
+                        <h3 class="our-catalog__carusel-card-title">Макарун</h3>
+                    </div>
+                    <div class="our-catalog__carusel-card">
+                        <picture class="our-catalog__carusel-pic">
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/webp' srcset='./image/maffin.webp' >
+                            <img src="./image/maffin.png" alt="maffin" class="our-catalog__carusel-card-image">
+                        </picture>	
+                        <h3 class="our-catalog__carusel-card-title">Капкейк</h3>
+                    </div>
+                    <div class="our-catalog__carusel-card">
+                        <picture class="our-catalog__carusel-pic">
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/webp' srcset='./image/.webp' >
+                            <img class="our-catalog__carusel-card-image" src='./image/maffin.png' alt='maffin'>
+                        </picture>	
+                        <h3 class="our-catalog__carusel-card-title">Маффин</h3>
+                    </div>
+                    <div class="our-catalog__carusel-card">
+                        <picture class="our-catalog__carusel-pic">
+                            <source type='image/avif' srcset='./image/maffin.avif'>
+                            <source type='image/webp' srcset='./image/maffin.webp' >
+                            <img class="our-catalog__carusel-card-image" src='./image/maffin.png' alt='ponchik'>
+                        </picture>	
+                        <h3 class="our-catalog__carusel-card-title">Пончик</h3>
+                    </div>
                 </div>
-                <div class="copyright">Все права сохранены/2021-2022</div>
-            </footer>
-        
+                <div class="our-catalog__cards">
+                    <div class="our-catalog__item">
+                        <picture class="our-catalog__item-pic">
+                            <source type='image/avif' srcset='./image/vanil.avif'>
+                            <source type='image/webp' srcset='./image/vanil.webp' >
+                            <img class="our-catalog__item-image" src='./image/vanil.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Ваниль)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="our-catalog__item">
+                        <picture class="our-catalog__item-pic">
+                            <source type='image/avif' srcset='./image/vishnya.avif'>
+                            <source type='image/webp' srcset='./image/vishnya.webp' >
+                            <img class="our-catalog__item-image" src='./image/vishnya.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Вишня)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="our-catalog__item">
+                        <picture class="our-catalog__item-pic">
+                            <!-- <source type='image/avif' srcset='./image/.avif'>
+                            <source type='image/webp' srcset='./image/.webp' > -->
+                            <img class="our-catalog__item-image" src='./image/beze-1.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Бизе)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="our-catalog__item">
+                        <picture>
+                            <source type='image/avif' srcset='./image/keks-karamel.avif'>
+                            <source type='image/webp' srcset='./image/keks-karamel.webp' >
+                            <img class="our-catalog__item-image" src='./image/keks-karamel.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Карамель)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="our-catalog__item">
+                        <picture>
+                            <source type='image/avif' srcset='./image/keks-chokolate.avif'>
+                            <source type='image/webp' srcset='./image/keks-chokolate.webp' >
+                            <img class="our-catalog__item-image" src='./image/keks-chokolate.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Шоколад)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                    <div class="our-catalog__item">
+                        <picture>
+                            <source type='image/avif' srcset='./image/krem.avif'>
+                            <source type='image/webp' srcset='./image/krem.webp' >
+                            <img class="our-catalog__item-image" src='./image/krem.png' alt='keks'>
+                        </picture>	
+                        <h3 class="our-catalog__item-title">Капкейк(Крем)</h3>
+                        <p class="our-catalog__item-descript">Свежие яйца,желток,сахар, маскарпоне, готовое печенье "Савоярди",эспрессо, коньяк, какао,соль</p>
+                        <div class="our-catalog__item-price">35 грн/70 г</div>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                        <a href="" class="our-catalog__button btn">Больше товаров</a>
+        </section>
+
+            <!-- отзывы -->
+        <section class="our-reviews wrapp">
+
+
+            <!-- заголовок секции -->
+            <h2 class="our-reviews-title">Отзывы наших сладкоежек</h2>
+
+            <!-- обертка грид-контейнер -->
+            <div class="our-reviews-wrapp">
+
+                <div class="pic-wrapp">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-1.avif'>
+                        <source type='image/webp' srcset='./image/foto-1.webp' >
+                        <img class="our-reviews-video" src='./image/foto-1.png' alt='foto-1'>
+                    </picture>	
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>	
+                </div>
+
+                <div class="pic-wrapp big">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-2-big.avif'>
+                        <source type='image/webp' srcset='./image/foto-2-big.webp' >
+                        <img class="our-reviews-video" src='./image/foto-2-big.png' alt='foto-2-big'>
+                    </picture>	
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>
+                </div>
+
+                <div class="pic-wrapp">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-2.avif'>
+                        <source type='image/webp' srcset='./image/foto-2.webp' >
+                        <img class="our-reviews-video" src='./image/foto-2.png' alt='foto-2'>
+                    </picture>
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>
+                </div>
+
+                <div class="pic-wrapp">`
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-3.avif'>
+                        <source type='image/webp' srcset='./image/foto-3.webp' >
+                        <img class="our-reviews-video" src='./image/foto-3.png' alt='foto-3'>
+                    </picture>	
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>
+                </div>
+
+                <div class="pic-wrapp half-big">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-half-big.avif'>
+                        <source type='image/webp' srcset='./image/foto-half-big.webp' >
+                        <img class="our-reviews-video" src='./image/foto-half-big.png' alt='foto-half-big'>                       
+                    </picture>
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>
+                </div>
+
+                <div class="pic-wrapp">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-4.avif'>
+                        <source type='image/webp' srcset='./image/foto-4.webp' >
+                        <img class="our-reviews-video" src='./image/foto-4.png' alt='foto-4'>
+                    </picture>
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>
+                </div>
+
+                <div class="pic-wrapp">
+                    <picture>
+                        <source type='image/avif' srcset='./image/foto-5.avif'>
+                        <source type='image/webp' srcset='./image/foto-5.webp' >
+                        <img class="our-reviews-video" src='./image/foto-5.png' alt='foto-5'>                   
+                    </picture>
+                    <picture class="video-icon-pic">
+                        <source type='image/avif' srcset='./image/video-icon-1.avif'>
+                        <source type='image/webp' srcset='./image/video-icon-1.webp' >
+                        <img class="video-icon" src='./image/video-icon-1.png' alt='видео-иконка'>
+                    </picture>	
+                  
+                </div> 
+                <div class="pic-wrapp-smoll">
+                    <a class="our-reviews-btn" href="#">Больше видеоотзывов</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- секция instagramm -->
+        <section class="our-instagramm wrapp">
+            <!-- заголовок -->
+            <h2 class="our-instagramm__title">Мы в instagramm</h2>
+            <!-- картинки -->
+            <div class="picture">
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/yeklery.avif'>
+                    <source type='image/webp' srcset='./image/yeklery.webp' >
+                    <img class="our-instagramm-image" src='./image/yeklery.png' alt='yeklery'>
+                </picture>	
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/ponchiki.avif'>
+                    <source type='image/webp' srcset='./image/ponchiki.webp' >
+                    <img class="our-instagramm-image" src='./image/ponchiki.png' alt='ponchiki'>
+                </picture>	
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/151-maffin.avif'>
+                    <source type='image/webp' srcset='./image/151-maffin.webp' >
+                    <img class="our-instagramm-image" src='./image/151-maffin.png' alt='maffin'>
+                </picture>	
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/donuts.avif'>
+                    <source type='image/webp' srcset='./image/donuts.webp' >
+                    <img class="our-instagramm-image" src='./image/donuts.png' alt='donuts'>
+                </picture>	
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/inst-makarun.avif'>
+                    <source type='image/webp' srcset='./image/inst-makarun.webp' >
+                    <img class="our-instagramm-image" src='./image/inst-makarun.png' alt='makarun'>
+                </picture>	
+                <picture class="our-instagramm-pic">
+                    <source type='image/avif' srcset='./image/unnamed-inst.avif'>
+                    <source type='image/webp' srcset='./image/unnamed-inst.webp' >
+                    <img class="our-instagramm-image" src='./image/unnamed-inst.png' alt='unnamed'>
+                </picture>	
+
+            </div>
+            <!-- кнопка -->
+            <a href="" class="btn instagramm-btn">Подписаться</a>
+        </section>
+
+        <!-- секция сделать заказ -->
+        <section class="time-order wrapp">
+            <h2 class="time-order__title">Время оформить заказ!</h2>
+            <div class="time-order__bg">
+                <form class="form">
+                    <h2 class="form__title">Готовы заказать?</h2>
+                    <label for="form-id" class="form__descript">Введите Ваши данные и мы<br>обязательно перезвоним</label>
+                    <input id="form-id" type="text" placeholder="Ваше имя" name="name" class="form__input">
+                    <input type="text" placeholder="Номер телефона" name="phone" class="form__input">
+                    <input type="submit" class="btn form__btn">
+                    <p class="disclaimer">Нажимая на кнопку, Вы даете согласие на обработку<br>Ваших персональных данных</p>
+                </form>
+                <picture class="time-order__bg-pic">
+                    <source type='image/avif' srcset='./image/order-bg-image.avif'>
+                    <source type='image/webp' srcset='./image/order-bg-image.webp' >
+                    <img class="time-order__bg-image" src='./image/order-bg-image.png' alt='picture-fon'>
+                </picture>	
+                
+            </div>
+
+        </section>
+        </main>
+
+        <footer class="footer">
+        <div class="footer__wrapp">
+            <div class="logo footer__logo">
+                <span class="logo__text">Sweet Paradise</span>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list ">
+                    <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">О нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Каталог</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Отзывы</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link footer-navigation">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="phone">+38 (050) 402 40 30</div>
+        </div>
+        <div class="copyright">Все права сохранены/2021-2022</div>
+        </footer>
+
     </div>
     
 </body>
